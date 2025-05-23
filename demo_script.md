@@ -1,6 +1,6 @@
-# 🎬 Demo Video Script – Multi-Agent Stock Bot
+# 🎬 Demo Script – Multi-Agent Stock Bot
 
-## 🗣️ Narration (Start)
+## 🗣️ Narration
 "Hi! This is a demo of my multi-agent stock analysis system built using Google ADK and Alpha Vantage."
 "It answers real-world stock queries using five modular agents that work together."
 
@@ -11,9 +11,6 @@
 - ticker_price_change: Computes price difference in the last 7 days
 - ticker_analysis: The brain—it calls all agents and combines the result
 
-## 💻 On-Screen Demo
-```bash
-python main.py
 ```
 Run queries like:
 - Why did Tesla stock drop today?
@@ -22,4 +19,3 @@ Run queries like:
 
 ## 🧾 Wrap-Up
 "This system is modular, real-time, and handles natural language queries using Alpha Vantage."
-"Thanks for watching!"
