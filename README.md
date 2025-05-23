@@ -49,13 +49,4 @@ stock-analysis-bot/
 ├── README.md
 ├── agents.yaml
 ├── orchestration.yaml
-```
 
-## 🎥 Demo Expectations
-- Show live query handling
-- Explain how each agent is triggered
-- Narrate control flow from input → analysis → output
-
----
-
-Built for AI Software Engineer Internship – 2025 ✅
