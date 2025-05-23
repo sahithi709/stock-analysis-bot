@@ -1,0 +1,35 @@
+agents:
+  - name: identify_ticker
+    description: Extracts ticker from user query (e.g., Tesla → TSLA)
+    input_schema:
+      type: string
+    output_schema:
+      type: string
+
+  - name: ticker_news
+    description: Fetches the latest news headlines and summaries for a given stock ticker
+    input_schema:
+      type: string
+    output_schema:
+      type: string
+
+  - name: ticker_price
+    description: Fetches the current market price of a stock
+    input_schema:
+      type: string
+    output_schema:
+      type: string
+
+  - name: ticker_price_change
+    description: Computes the change in price over the past 7 days
+    input_schema:
+      type: string
+    output_schema:
+      type: string
+
+  - name: ticker_analysis
+    description: Main agent that routes the query, fetches results from subagents, and returns summary
+    input_schema:
+      type: string
+    output_schema:
+      type: string

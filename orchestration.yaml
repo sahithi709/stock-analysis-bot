@@ -1,0 +1,19 @@
+orchestration:
+  entry_agent: ticker_analysis
+  agents:
+    ticker_analysis:
+      steps:
+        - call: identify_ticker
+          input: $input
+          output: ticker
+        - call: ticker_price
+          input: $ticker
+          output: price
+        - call: ticker_price_change
+          input: $ticker
+          output: delta
+        - call: ticker_news
+          input: $ticker
+          output: news
+        - return: |
+            Stock: $ticker\n$price\n$delta\n\nRecent News:\n$news
